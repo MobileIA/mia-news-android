@@ -37,6 +37,7 @@ public class NewsViewHolder extends BaseViewHolder<News> implements View.OnClick
      */
     public NewsViewHolder(View itemView) {
         super(itemView);
+        itemView.setOnClickListener(this);
         titleView = itemView.findViewById(R.id.text_title);
         imageView = itemView.findViewById(R.id.image);
         captionView = itemView.findViewById(R.id.text_caption);
