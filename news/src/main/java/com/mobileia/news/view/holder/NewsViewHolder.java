@@ -55,7 +55,7 @@ public class NewsViewHolder extends BaseViewHolder<News> implements View.OnClick
         if(object.photo != null && object.photo.length() > 0){
             Glide.with(imageView).load(object.photo).into(imageView);
         }else{
-            imageView.setImageResource(R.drawable.placeholder);
+            imageView.setImageResource(R.drawable.placeholder_news);
         }
     }
 
